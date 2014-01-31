@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Payment Processing System";
+    Layout = "~/Views/Shared/_Foundation.cshtml";
+}
+
+<div class="row">
+      <div class="large-12 columns">
+        <h2 >Welcome to Pay Proc
+        </h2>
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-8 columns">
+        <div class="panel signin-textbox"> 
+         <div class="row">    
+         <div class="large-12 columns">
+                  <div class="large-4 columns"><img src="../../Content/Images/paymen-card.png" alt=""></div>
+          <p> Pay Proc provides Fast, Secure and Convenient online bill payment solutions. Now you can manage your entire bill payment process online anytime, anywhere you have Internet availability.</p>
+          <ul class="brief">
+            <li><strong>Fast</strong> – no envelopes, stamps or hassles, bills are paid in minutes</li>
+            <li><strong>Secure</strong> – we use the same high level of security as the leading online banking and financial service sites</li>
+            <li><strong>Convenient</strong> – payment history tells you when and what bills  are paid, you can also save and pay at the convibnence of your home, pay and do not worry about them again.</li>
+          </ul>
+          <p> World class bill payment solutions with world class customer service!
+            
+            Pay Proc's goal is to become the one-stop shop to manage all of your online bill payment needs.</p>
+          </div>
+            </div>
+                </div>
+      </div>
+      <div class="large-4 columns">
+        <div class="panel">
+          <h4>Login</h4>
+          <input type="number" class="" placeholder="User ID">
+          <input type="password" placeholder="Password">
+          <div class="text-right">
+            <button type="button" class="small button text-right" onClick="window.location.href='main.html'">Login </button>
+          </div>
+          <a href="#" class=" left-align">Forgot password?</a> </div>
+        <div class="panel">
+          <h5>Not yet Registered?</h5>
+            @Html.ActionLink("Register Now", "Index", "UserRegistration", null, new { @class = "success button" })
+        </div>
+      </div>
+    </div>

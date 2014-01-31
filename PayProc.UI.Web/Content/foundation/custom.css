@@ -1,0 +1,186 @@
+@import url("../font/fontstyle.css");
+@import url("../font/foundation-icons/foundation-icons.css");
+@import url("../font/foundation_icons_all/foundation_icons_general_enclosed/stylesheets/general_enclosed_foundicons.css");
+body {
+	background: url(../img/background.png);
+	font-family: 'Segoe UI' !important;
+}
+header {
+	box-shadow: 1px 1px 10px #b5b5b5;
+	height: 55px;
+	background: #65bd77;
+	border-bottom:1px solid #41a055;
+}
+header a.logo {
+	float: left;
+	margin-top: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #747576!important;
+	font-family: 'Segoe UI' !important;
+}
+h2 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.2em;
+}
+hr
+{
+	margin: 0.8em 0 1.1875em;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	font-size: 60%!important;
+	color: #9ba6aa;
+	font-family: 'Segoe UI' !important;
+}
+.top-bar {
+	margin-top: 15px;
+	background-color: #5c5c5c;
+}
+.top-bar-section li a:not(.button)
+{
+	background:#5c5c5c;
+}
+.top-bar-section li:hover a:not(.button)
+{
+	background:#3d3d3d;
+}
+.top-bar-section .dropdown li a:hover
+{
+	background:#292929;
+}
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+ border-right: solid 1px #3c3c3c;
+ border-left: none !important;
+}
+.top-bar-section .has-form {
+	background: red;
+}
+.dropdown .divider {
+	border-bottom: solid 1px #444444;
+	border-top: none !important;
+}
+ul.top-bar-info {
+	margin-top: 15px;
+	list-style-type: none;
+}
+.top-bar-info li {
+	float: left;
+	color: #fff;
+	font-size: 0.8em;
+	padding: 0 5px 0 0;
+	background: url(../img/border-left.png) no-repeat left center;
+	line-height: 26px;
+}
+.top-bar-info li.profile-icon {
+	background: url(../img/profile-mobile.png) no-repeat left top;
+	padding-left: 23px;
+	color: #fff727;
+}
+.top-bar-info li a span, .top-bar-info li a {
+	display: inline-block;
+	margin-left: 4px;
+	text-decoration: underline;
+}
+.top-bar-info li:first-child {
+	border: 0;
+}
+.top-bar-info li a {
+	color: #fff;
+	text-decoration: underline;
+}
+.top-bar-info li a:hover {
+	color: #CF0;
+}
+.top-bar-info li span.welcom-text {
+	color: #fff;
+}
+.top-bar ul li.active > a {
+	background: #65bd77!important;
+	color: #fff;
+}
+input[type="text"]:focus {
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	border-color: #fff!important;
+	background-color: none!important
+}
+.read {
+	background-color: #f4f4f4!important;
+	border: 1px solid #CCCCCC!important;
+}
+.panel {
+	background: #fefffb;
+	box-shadow: 1px 1px 8px #CCC;
+	border: 1px solid #d2d8c3;
+}
+.panel ul.brief {
+	margin-left: 2em;
+}
+table tr th {
+	background: #cbeab3;
+}
+ul.pagination li.current a {
+	background: #595959;
+}
+form .row .row .column, form .row .row .columns {
+	padding-left: 0;
+}
+.signin-textbox {
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFFFFF, #EDEBEB);
+    background-repeat: repeat-x;
+    border-color: #cecece;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 20px;
+	font-size:0.9em;
+}
+
+button.small, .button.small
+{
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
+}
+button, .button {
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
+}
+.fi-dollar:before
+{
+	font-size: 1.2em;
+	vertical-align:top;
+}
+
+/* Footer */
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin-bottom: -50px !important;
+}
+.footer {
+	background: none repeat scroll 0 0 #fbfefa;
+    box-shadow: 1px 4px 9px -6px inset;
+	height:50px !important;
+}
+.footer-cont
+{
+	text-align:right;
+	margin-top:5px;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select
+{
+	height: 2em;
+	padding: 0 0.5em;
+}
+select
+{
+	padding: 0.1em 0.1em 0.1em 0.5em;
+}

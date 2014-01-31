@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B0F25D0-C748-40D2-BA8D-5A4B5F94CA9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PayProc.Entities</RootNamespace>
+    <AssemblyName>PayProc.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0-alpha1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0-alpha1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\AlertType.cs" />
+    <Compile Include="Models\AmountPayType.cs" />
+    <Compile Include="Models\ApplicationMenu.cs" />
+    <Compile Include="Models\ApplicationRole.cs" />
+    <Compile Include="Models\ApplicationSetting.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Attribute.cs" />
+    <Compile Include="Models\AttributeType.cs" />
+    <Compile Include="Models\Biller.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\ClientPostType.cs" />
+    <Compile Include="Models\ClientTemplate.cs" />
+    <Compile Include="Models\ClientType.cs" />
+    <Compile Include="Models\CutoffType.cs" />
+    <Compile Include="Models\Feedback.cs" />
+    <Compile Include="Models\FileUpload.cs" />
+    <Compile Include="Models\Mapping\AlertTypeMap.cs" />
+    <Compile Include="Models\Mapping\AmountPayTypeMap.cs" />
+    <Compile Include="Models\Mapping\ApplicationMenuMap.cs" />
+    <Compile Include="Models\Mapping\ApplicationRoleMap.cs" />
+    <Compile Include="Models\Mapping\ApplicationSettingMap.cs" />
+    <Compile Include="Models\Mapping\ApplicationUserMap.cs" />
+    <Compile Include="Models\Mapping\AttributeMap.cs" />
+    <Compile Include="Models\Mapping\AttributeTypeMap.cs" />
+    <Compile Include="Models\Mapping\BillerMap.cs" />
+    <Compile Include="Models\Mapping\ClientMap.cs" />
+    <Compile Include="Models\Mapping\ClientPostTypeMap.cs" />
+    <Compile Include="Models\Mapping\ClientTemplateMap.cs" />
+    <Compile Include="Models\Mapping\ClientTypeMap.cs" />
+    <Compile Include="Models\Mapping\CutoffTypeMap.cs" />
+    <Compile Include="Models\Mapping\FeedbackMap.cs" />
+    <Compile Include="Models\Mapping\FileUploadMap.cs" />
+    <Compile Include="Models\Mapping\MemberAccountMap.cs" />
+    <Compile Include="Models\Mapping\MemberActivityLogMap.cs" />
+    <Compile Include="Models\Mapping\MemberBillerMap.cs" />
+    <Compile Include="Models\Mapping\MemberBillMap.cs" />
+    <Compile Include="Models\Mapping\PaymentDetailMap.cs" />
+    <Compile Include="Models\Mapping\PaymentFlowMap.cs" />
+    <Compile Include="Models\Mapping\PaymentMap.cs" />
+    <Compile Include="Models\Mapping\PaymentStatuMap.cs" />
+    <Compile Include="Models\Mapping\PaymentTypeMap.cs" />
+    <Compile Include="Models\Mapping\ResponseTypeMap.cs" />
+    <Compile Include="Models\Mapping\RoleMenuMap.cs" />
+    <Compile Include="Models\Mapping\StateMap.cs" />
+    <Compile Include="Models\Mapping\TemplateAttributeMap.cs" />
+    <Compile Include="Models\Mapping\TemplateMap.cs" />
+    <Compile Include="Models\Mapping\TemplateTypeMap.cs" />
+    <Compile Include="Models\Mapping\UserActivityTypeMap.cs" />
+    <Compile Include="Models\Mapping\UserAlertMap.cs" />
+    <Compile Include="Models\Mapping\UserStatusTypeMap.cs" />
+    <Compile Include="Models\Mapping\UserTypeMap.cs" />
+    <Compile Include="Models\Mapping\UtilityMap.cs" />
+    <Compile Include="Models\MemberAccount.cs" />
+    <Compile Include="Models\MemberActivityLog.cs" />
+    <Compile Include="Models\MemberBill.cs" />
+    <Compile Include="Models\MemberBiller.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\PaymentDetail.cs" />
+    <Compile Include="Models\PaymentFlow.cs" />
+    <Compile Include="Models\PaymentStatu.cs" />
+    <Compile Include="Models\PaymentType.cs" />
+    <Compile Include="Models\ResponseType.cs" />
+    <Compile Include="Models\RoleMenu.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\Template.cs" />
+    <Compile Include="Models\TemplateAttribute.cs" />
+    <Compile Include="Models\TemplateType.cs" />
+    <Compile Include="Models\UserActivityType.cs" />
+    <Compile Include="Models\UserAlert.cs" />
+    <Compile Include="Models\UserStatusType.cs" />
+    <Compile Include="Models\UserType.cs" />
+    <Compile Include="Models\Utility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\Common\BaseViewModel.cs" />
+    <Compile Include="ViewModel\UserManagement\UserInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

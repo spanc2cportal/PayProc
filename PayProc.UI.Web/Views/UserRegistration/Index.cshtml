@@ -1,0 +1,183 @@
+﻿@model PayProc.Models.ViewModel.UserInfo
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Foundation.cshtml";
+}
+
+@using (Html.BeginForm("SaveUserInformation", "UserRegistration", FormMethod.Post))
+{
+    @Html.ValidationSummary(true)
+    {
+    <div class="row">
+        <div class="large-12 columns">
+            <h2>User Registration</h2>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.UserId)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.EditorFor(model => model.UserId)
+                @Html.ValidationMessageFor(model => model.UserId)
+            </div>
+        </div>
+        <div class="large-3 columns"></div>
+        <div class="large-3 columns"></div>
+    </div>
+        
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.LastName)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Phone)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.Phone)
+                @Html.ValidationMessageFor(model => model.Phone)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.EmailId)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.EmailId)
+                @Html.ValidationMessageFor(model => model.EmailId)
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.AddressOne)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.AddressOne)
+                @Html.ValidationMessageFor(model => model.AddressOne)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.City)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.City)
+                @Html.ValidationMessageFor(model => model.City)
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.AddressTwo)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.AddressTwo)
+                @Html.ValidationMessageFor(model => model.AddressTwo)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ZipCode)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ZipCode)
+                @Html.ValidationMessageFor(model => model.ZipCode)
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="large-3 columns">
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Captcha)
+            </div>
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-label" style="border: solid; border-width: thin; height: 20px;">
+            </div>
+        </div>
+        <div class="large-3 columns"></div>
+        <div class="large-3 columns"></div>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">
+            &nbsp;
+        </div>
+        <div class="large-3 columns">
+            <div class="editor-field">
+                Enter the above text
+                @Html.TextBoxFor(model => model.Captcha)
+                @Html.ValidationMessageFor(model => model.Captcha)
+            </div>
+        </div>
+        <div class="large-3 columns"></div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="editor-label">
+                Please read the Privacy Policy and Terms & Conditions by clicking below. They contain important information concerning the privacy and security of your information. You must agree to the Privacy Policy and Terms & Conditions to continue.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="editor-checkbox-field">
+                <label>@Html.CheckBoxFor(model => model.IsAgreeToTerms) I have read and agree to the Terms & Conditions and Privacy Policy @Html.ValidationMessageFor(model => model.IsAgreeToTerms)</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-12 columns columns text-right">
+            <input value="Submit" type="submit" class="success button" />
+            @Html.ActionLink("Cancel", "Index", "Home", null, new { @class = "success button" })
+        </div>
+    </div>
+    }
+}
+
+
