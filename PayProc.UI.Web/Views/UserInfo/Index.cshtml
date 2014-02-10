@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PayProc.Models.ViewModel.UserInfo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Foundation.cshtml";
+}
+
+<h2>User List</h2>
+
+<fieldset>
+
+    <div class="editor-label">
+        User Name
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("UserName")        
+    </div>
+
+    <div class="editor-label">
+        Status
+    </div>
+    <div class="editor-field">
+        @Html.DropDownList("Status")
+    </div>
+
+    <div class="editor-label">
+        Role
+    </div>
+    <div class="editor-field">
+        @Html.TextBox("Role")
+        @*@Html.DropDownList("Role", "-- Select Role --")        *@
+    </div>
+
+    <p>
+        @Html.ActionLink("Add New", "Create")
+    </p>
+</fieldset>
+<table>
+    <tr>
+        <th>User Name
+        </th>
+        <th>Email
+        </th>
+        <th>Phone
+        </th>
+        <th>Role
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppRoleId)
+            </td>
+            <td>
+                @Html.ActionLink("Reset Password", "ResetPassword", new { id = item.UserId })
+            </td>
+        </tr>    
+    }
+</table>

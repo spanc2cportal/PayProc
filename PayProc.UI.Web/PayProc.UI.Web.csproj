@@ -220,6 +220,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Views\UserRegistration\UserList.cshtml" />
+    <Content Include="Views\UserInfo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
